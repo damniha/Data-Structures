@@ -45,5 +45,7 @@ We need two stacks to do this:
 ## Time Complexity:
 ***O(n)*** 
 
-### Peek:
-Retuning the top node is static.
+## Popping Time Complexity:
+***O(1)*** per operation.
+
+**Note:** Those two stacks can be implemented using arrays instead of single link list. Implementing the queue using arrays is much easier.
