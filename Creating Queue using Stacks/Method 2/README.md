@@ -11,9 +11,9 @@ We need two stacks to do this:
 
 | Stack 1 | Stack 2 | 
 |:-:|:-:|
-| 1 |  |
-| 2 |  |
 | 3 |  |
+| 2 |  |
+| 1 |  |
 
 
 ## Time Complexity:
