@@ -7,15 +7,13 @@ class Node {
 class Stack {
   constructor(){
     this.top = null;
-    this.bottom = null;
     this.length = 0;
   }
   push(value){
     const newNode = new Node(value);
-    if (this.length === 0) {
+    if (this.length === 0) 
       this.top = newNode;
-      this.bottom = newNode;
-    } else {
+    else {
       const holdingPointer = this.top;
       this.top = newNode;
       this.top.next = holdingPointer;
@@ -58,7 +56,6 @@ class Queue {
       this.last.top = this.last.top.next;
       this.last.length--;
     }
-    this.last.bottom = null;
     return this.first;
   }
 
@@ -70,7 +67,6 @@ class Queue {
   	console.log(this.first.pop());
   	this.first.top = this.first.top.next;
     this.first.length --;
-    if(this.first.length === 0)this.first.bottom = null;
   }
 
   isEmpty(stack){
